@@ -10,6 +10,13 @@ const cliSelect = require("cli-select");
   const videos = files.filter(it => ['.mp4', '.mkv'].includes(path.extname(it)))
   const sub_files = files.filter(it => ['.srt'].includes(path.extname(it)))
 
+  if (!videos.length) {
+    console.log('no video file here!');
+  }
+  if (!sub_files.length) {
+    console.log('no subtitle file here!');
+  }
+
   console.log("Select a video file:");
   let selected_video;
   if (videos.length > 1) {
