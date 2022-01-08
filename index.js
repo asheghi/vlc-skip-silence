@@ -50,12 +50,12 @@ const cliSelect = require("cli-select");
     password: "hi"
   });
 
-  const cmd = `vlc -I qt --extraintf http --http-password hi --sub-margin 300  --sub-text-scale 125`;
+  const cmd = `vlc -I qt --extraintf http --http-password hi`;
 
   exec(`${cmd} ${selected_video} ${selected_sub_file}`);
   await new Promise(r => setTimeout(r, 2000))
 
-  const input = fs.readFileSync('mando.srt', 'utf8')
+  const input = fs.readFileSync(selected_sub_file, 'utf8')
   const subtitles = parseSync(input).map(it => it.data);
 
   while (1) {
