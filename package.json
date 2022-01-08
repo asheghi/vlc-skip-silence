@@ -1,7 +1,7 @@
 {
-  "name": "tmp3",
+  "name": "seek-silence",
   "version": "1.0.0",
-  "description": "",
+  "description": "vlc seek silence",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
