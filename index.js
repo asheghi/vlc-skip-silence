@@ -12,9 +12,11 @@ const cliSelect = require("cli-select");
 
   if (!videos.length) {
     console.log('no video file here!');
+    return 0;
   }
   if (!sub_files.length) {
     console.log('no subtitle file here!');
+    return 0;
   }
 
   console.log("Select a video file:");
