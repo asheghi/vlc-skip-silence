@@ -1,7 +1,7 @@
 {
-  "name": "seek-silence",
-  "version": "1.0.1",
-  "description": "vlc seek silence",
+  "name": "skip-silence",
+  "version": "1.0.0",
+  "description": "vlc skip silence",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "cli-select": "^1.1.2",
-    "get-video-dimensions": "^1.0.0",
     "subtitle": "^4.1.2",
     "vlc-client": "^1.0.6"
   }

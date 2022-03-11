@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const VLC = require("vlc-client");
 const {exec} = require("child_process");
 const {parseSync} = require('subtitle');
